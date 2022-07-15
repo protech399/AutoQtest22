@@ -1,0 +1,61 @@
+package TestNGBasic;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.io.FileHandler;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class TestNGDemoScreanShot {
+	
+	WebDriver driver;
+	
+	
+	@BeforeMethod
+	public void url() {
+		WebDriverManager.edgedriver().setup();
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("http://demo.automationtesting.in/Register.html");
+	}
+	
+	@Test
+	public void Testing1() throws IOException {
+		String act= driver.getTitle();
+		System.out.println(act);
+		
+		String exp= "Register1";
+		
+		if(act.equals(exp)) {
+		
+			System.out.println("TC is Pass");
+		
+		}else {
+			
+			System.out.println("This test case is fail, Ref. the ScreanShot");
+			
+			TakesScreenshot Ss= (TakesScreenshot) driver;
+			
+			File source = Ss.getScreenshotAs(OutputType.FILE);
+			
+			File target = new File("C:\\Users\\DELL\\eclipse-workspace\\AutoQtest\\Faild TC\\"+"Title.png");
+			
+			FileHandler.copy(source, target);
+		}
+		
+	}
+	
+	@AfterMethod
+	public void logout() {
+		driver.close();
+	}
+
+}

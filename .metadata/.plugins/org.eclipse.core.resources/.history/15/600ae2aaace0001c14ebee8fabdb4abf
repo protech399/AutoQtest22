@@ -1,0 +1,20 @@
+
+public class ifElse1 {
+
+	public static void main(String[] args) {
+		// if else
+		int a=10, b=20;
+		
+		if (a>b) {
+			System.out.println("A is Bigger");
+		}
+		else {
+			System.out.println("A is Smaller");
+		}
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,37 @@
+package Excel;
+
+import java.io.FileInputStream;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+
+
+public class excelTest {
+
+	public static void main(String[] args) throws IOException {
+
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\DELL\\Music\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("http://demo.automationtesting.in/Register.html");
+		
+		FileInputStream fs = new FileInputStream("C:\\Users\\DELL\\Desktop\\demoTest.xlsx");
+		
+		String data = WorkbookFactory.create(fs).getSheet("test1").getRow(1).getCell(0).getStringCellValue();
+		System.out.println(data);
+		
+		WebElement w = driver.findElement(By.xpath("//*[@id=\'basicBootstrapForm\']/div[2]/div/textarea"));
+		w.sendKeys(data);
+		
+		
+	}
+
+}

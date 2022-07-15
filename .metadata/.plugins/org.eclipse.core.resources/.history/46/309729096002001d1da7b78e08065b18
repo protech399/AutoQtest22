@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+
+public class AbhiProB1207 {
+
+	public static void main(String[] args) {
+
+		String x = "PRAFULL PATIL";
+		
+		String CAP= ""; String small="";
+		
+		int Cap=0; int Small=0; 
+		
+		for(int i=0; i<x.length(); i++) {
+			char ch= x.charAt(i);
+			if(ch>=60 && ch<=99) {
+				Cap++;
+				CAP = CAP + x.charAt(i);
+			}else {
+				Small++;
+				small = small+x.charAt(i);
+			}
+		}
+		System.out.println(CAP +" "+ Cap);
+		System.out.println(small+" "+Small);
+	}
+
+}

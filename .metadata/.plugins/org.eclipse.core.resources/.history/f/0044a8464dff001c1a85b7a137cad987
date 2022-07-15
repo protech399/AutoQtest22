@@ -1,0 +1,83 @@
+package Excel;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class wdPractice {
+
+	public static void main(String[] args) throws IOException {
+
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
+		
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		
+		driver.get("https://demowebshop.tricentis.com/login");
+		
+		FileInputStream fs= new FileInputStream("C:\\Users\\DELL\\eclipse-workspace\\AutoQtest\\src\\test\\java\\Excel\\wdPractice.java\\demoTest.xlsx");
+		XSSFWorkbook workbook = new XSSFWorkbook(fs);
+		XSSFSheet sheet = workbook.getSheet("test1");
+		
+//		Storing the Values in to Variables
+		XSSFRow row=null;
+		XSSFCell cell=null;
+		String first_Name=null;
+		String last_Name=null;
+		String addrees=null;
+		String email_id=null;
+		String phone_No=null;
+		
+		
+		for(int i=1; i<sheet.getFirstRowNum(); i++ )
+		{
+			row =sheet.getRow(i);
+					for(int j=0; j<row.getLastCellNum(); j++) 
+					{
+						cell=row.getCell(j);
+						if(j==0) 
+						{
+							first_Name=cell.getStringCellValue();
+							
+						}
+						if(j==1) {
+							last_Name=cell.getStringCellValue();
+						}
+						if(j==2) {
+							addrees=cell.getStringCellValue();
+						}
+						if(j==3) {
+							email_id=cell.getStringCellValue();
+						}
+						if(j==4) {
+							phone_No=cell.getStringCellValue();
+						}
+						System.out.println(first_Name+"-->"+last_Name+"-->"+addrees+"-->"+email_id+"-->"+phone_No);
+					}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

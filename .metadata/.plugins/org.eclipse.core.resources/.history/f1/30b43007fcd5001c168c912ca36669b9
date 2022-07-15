@@ -1,0 +1,16 @@
+package variables;
+
+public class string {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String name = "hello word";   //string datatype 
+		System.out.println(name);
+	int roll = 106;
+	System.out.println("roll no. is"+roll);
+	}
+	
+
+}
+
+	

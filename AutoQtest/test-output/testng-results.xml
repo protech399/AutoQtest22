@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="3" total="8" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-13T11:34:58 IST" name="Suite" finished-at="2022-07-13T11:34:58 IST" duration-ms="178">
+    <groups>
+      <group name="Sanity">
+        <method signature="BasicNG.test1()[pri:1, instance:TestNGBasic.BasicNG@68999068]" name="test1" class="TestNGBasic.BasicNG"/>
+        <method signature="BasicNG.test3()[pri:5, instance:TestNGBasic.BasicNG@68999068]" name="test3" class="TestNGBasic.BasicNG"/>
+        <method signature="BasicNG.test8()[pri:2, instance:TestNGBasic.BasicNG@68999068]" name="test8" class="TestNGBasic.BasicNG"/>
+      </group> <!-- Sanity -->
+      <group name="Smoke">
+        <method signature="BasicNG.test1()[pri:1, instance:TestNGBasic.BasicNG@68999068]" name="test1" class="TestNGBasic.BasicNG"/>
+        <method signature="BasicNG.test4()[pri:0, instance:TestNGBasic.BasicNG@68999068]" name="test4" class="TestNGBasic.BasicNG"/>
+        <method signature="BasicNG.test7()[pri:0, instance:TestNGBasic.BasicNG@68999068]" name="test7" class="TestNGBasic.BasicNG"/>
+      </group> <!-- Smoke -->
+      <group name="Regresion">
+        <method signature="BasicNG.test1()[pri:1, instance:TestNGBasic.BasicNG@68999068]" name="test1" class="TestNGBasic.BasicNG"/>
+        <method signature="BasicNG.test3()[pri:5, instance:TestNGBasic.BasicNG@68999068]" name="test3" class="TestNGBasic.BasicNG"/>
+        <method signature="BasicNG.test4()[pri:0, instance:TestNGBasic.BasicNG@68999068]" name="test4" class="TestNGBasic.BasicNG"/>
+        <method signature="BasicNG.test7()[pri:0, instance:TestNGBasic.BasicNG@68999068]" name="test7" class="TestNGBasic.BasicNG"/>
+        <method signature="BasicNG.test8()[pri:2, instance:TestNGBasic.BasicNG@68999068]" name="test8" class="TestNGBasic.BasicNG"/>
+      </group> <!-- Regresion -->
+    </groups>
+    <test started-at="2022-07-13T11:34:58 IST" name="Test" finished-at="2022-07-13T11:34:58 IST" duration-ms="178">
+      <class name="TestNGBasic.BasicNG">
+        <test-method signature="test4()[pri:0, instance:TestNGBasic.BasicNG@68999068]" started-at="2022-07-13T11:34:58 IST" name="test4" finished-at="2022-07-13T11:34:58 IST" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method signature="test7()[pri:0, instance:TestNGBasic.BasicNG@68999068]" started-at="2022-07-13T11:34:58 IST" name="test7" finished-at="2022-07-13T11:34:58 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test7 -->
+        <test-method signature="test1()[pri:1, instance:TestNGBasic.BasicNG@68999068]" started-at="2022-07-13T11:34:58 IST" name="test1" description="LogIn" finished-at="2022-07-13T11:34:58 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test8()[pri:2, instance:TestNGBasic.BasicNG@68999068]" started-at="2022-07-13T11:34:58 IST" name="test8" finished-at="2022-07-13T11:34:58 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test8 -->
+        <test-method signature="test3()[pri:5, instance:TestNGBasic.BasicNG@68999068]" started-at="2022-07-13T11:34:58 IST" name="test3" finished-at="2022-07-13T11:34:58 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+      </class> <!-- TestNGBasic.BasicNG -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

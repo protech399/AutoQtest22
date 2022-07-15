@@ -1,0 +1,26 @@
+
+public class ifElse1 {
+
+	public static void main(String[] args) {
+		// if else
+		int a=100, b=20, c=50;
+		if (a>b) {
+			if (a>c) {
+			System.out.println("A is Bigger");
+			}else {
+				System.out.println("c is Bigger");
+			}
+		}
+		else {if (b>c) {
+			System.out.println("B is Bigger");
+		}
+		else {
+			System.out.println("C is Bigger");
+		}
+		}
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,29 @@
+package DropDownHandling;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class ByWeBElement {
+
+	public static void main(String[] args) {
+		
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("http://demo.automationtesting.in/Register.html");
+		WebElement SwitchTo = driver.findElement(By.xpath("//a[text()='SwitchTo']"));
+		SwitchTo.click();
+		String url= driver.getCurrentUrl();
+		driver.close();
+		
+		driver.get(url);
+		
+		
+		
+	}
+
+}

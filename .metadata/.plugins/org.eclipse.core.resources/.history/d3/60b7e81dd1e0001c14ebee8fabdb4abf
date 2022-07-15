@@ -1,0 +1,18 @@
+
+public class arraye {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int sum=0;
+		int[] a= new int[5];
+		a[0]=10;
+		a[1]=14;
+		a[2]=23;
+		a[3]=3;
+		a[4]=5;
+		for (int i=0; i<a.length; i++) {
+		sum=sum+a[i]	
+		}System.out.println(sum);
+	}
+
+}

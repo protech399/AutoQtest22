@@ -1,0 +1,110 @@
+
+
+Automation Testing Insider
+#SeleniumFramework #SeleniumHybridFramework
+For mock interview, send your resume to hitendraverma22@gmail.com
+
+Complete Selenium framework  - E-Commerce Application
+
+Topic: How to Develop a Selenium Hybrid Automation Framework From Scratch
+
+GitHub URL:
+https://github.com/hverma22/MyProject
+
+SUBSCRIBE: https://www.youtube.com/channel/UCF6h...
+
+***Framework Topics***
+======================
+Session 1: 
+--------------------
+Framework Architecture
+
+35:41:00 - Session 2:
+----------------------------------
+Navigation and Manual Test Cases
+Update the POM.xml
+Create Config.properties File
+Create BaseClass and ActionDriver class
+
+1:38:59 - Session 3: 
+------------------------------
+Write page objects and methods in page classes
+
+2:45:35 - Session 4:
+-------------------- ----------
+Create Test class and write test cases
+
+3:37:20 - Session 5:
+-------------------- ----------
+Create Test class and write test cases- completed
+
+4:25:05 - Session 6:
+-------------------------------
+Log4j Implementation
+Data Driven Testing – Supply the data from excel sheet
+Run all the test cases through testng.xml
+Grouping of test cases – Smoke, Sanity ,Regression
+Cross Browser and Parallel Execution
+
+5:42:20 - Session 7:
+--------------------------------
+Extent Report, Listener and Screenshots and SCM - Git and GitHub.
+
+6:28:15 - Session 8:
+-------------------------------
+CI Integration and Run Project Through Jenkins – Generate report, send email etc.
+
+7:24:25 - Session 9:
+-------------------------------
+If we need to pass greater than 10 test data. Collection implementation and example
+
+7:51:00 - Session 10:
+----------------------------------
+OOPS explanation and Tips and Conclusion
+
+About this channel:
+This channel is dedicated to Software Testing, Automation Testing, Devops, Agile and TestNG, Maven, Jenkins, Git, Github, RPA, Agile, Devops, Database, Domain and many more.
+
+Selenium WebDriver Step By Step:
+https://www.youtube.com/watch?v=UoMAE...
+
+Java Step By Step:
+https://www.youtube.com/watch?v=U7WEb...
+
+TestNG Tutorials:
+https://www.youtube.com/watch?v=X26Sz...
+
+ScreenShots,Logs,Reports,Properties File
+https://www.youtube.com/watch?v=K0ZL8...
+
+Maven Tutorials:
+https://www.youtube.com/watch?v=uAQvN...
+
+Page Object Model:
+https://www.youtube.com/watch?v=U0w-z...
+
+Excel and DataDriven Framework
+https://www.youtube.com/watch?v=isEQP...
+
+Git and GitHub:
+https://www.youtube.com/watch?v=R1bFl...
+
+Jenkins Videos:
+https://www.youtube.com/watch?v=a5Tc7...
+
+Selenium Framework Development Videos:
+https://www.youtube.com/watch?v=PcWBI...
+
+Core Java Interview Questions and Answers
+https://www.youtube.com/watch?v=tQpEs...
+
+Selenium WebDriver Interview Questions and Answers
+https://www.youtube.com/watch?v=1ZLr0...
+
+Please Subscribe this channel and press bell icon to get some interesting topics on Java and Selenium and other tools.
+https://www.youtube.com/channel/UCF6h...
+
+Please check out my blog here:
+https://www.automationtestinginsider.com
+
+Follow Facebook Page
